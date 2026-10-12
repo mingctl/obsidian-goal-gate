@@ -1,4 +1,4 @@
-# decision-vault
+# obsidian-goal-gate
 
 **A goal-gated work system for people who own outcomes.** Nothing gets on your list unless it moves a goal.
 
@@ -51,7 +51,7 @@ The agent never invents goals, owners, dates, or priorities, and never deletes a
 
 ## How it compares
 
-| | [obsidian-claude-pkm](https://github.com/ballred/obsidian-claude-pkm) | [obsidian-mind](https://github.com/breferrari/obsidian-mind) | decision-vault |
+| | [obsidian-claude-pkm](https://github.com/ballred/obsidian-claude-pkm) | [obsidian-mind](https://github.com/breferrari/obsidian-mind) | obsidian-goal-gate |
 |---|---|---|---|
 | Scope | Your whole life: 3-year vision down to daily notes | Your career memory: work log, 1:1s, brag doc | One job's outcomes: a quarter, a few goals |
 | How it handles drift | Reviews activity against goals after the fact | Not its focus | Blocks goal-less tasks at entry |
