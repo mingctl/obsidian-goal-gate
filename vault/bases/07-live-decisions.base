@@ -1,0 +1,24 @@
+# This table is "the judgments that count right now".
+# Overturned versions stay in the vault but only show up in the "Superseded" view.
+filters:
+  and:
+    - 'note.kind == "decision"'
+views:
+  - type: table
+    name: Live decisions
+    filters:
+      and:
+        - 'note.status == "live"'
+    order:
+      - file.name
+      - note.goal
+      - note.implication
+      - note.supersedes
+  - type: table
+    name: Superseded
+    filters:
+      and:
+        - 'note.status == "superseded"'
+    order:
+      - file.name
+      - note.superseded_by

@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'note.kind == "question"'
+    - 'note.status == "open"'
+views:
+  - type: table
+    name: Open — by goal
+    groupBy:
+      property: note.goal
+      direction: ASC
+    order:
+      - file.name
+      - note.implication
+      - note.related

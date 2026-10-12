@@ -1,0 +1,33 @@
+# Change the phase in the "This phase" view once a month. "All P0" keeps everything.
+filters:
+  and:
+    - note.type == "task"
+    - note.priority == "P0"
+    - note.status != "done"
+views:
+  - type: table
+    name: P0 — this phase 2026-10
+    filters:
+      and:
+        - 'note.phase == "2026-10"'
+    order:
+      - file.name
+      - goal
+      - status
+      - due
+      - blocked_by
+    sort:
+      - property: due
+        direction: ASC
+  - type: table
+    name: All P0
+    order:
+      - file.name
+      - goal
+      - phase
+      - status
+      - due
+      - blocked_by
+    sort:
+      - property: due
+        direction: ASC

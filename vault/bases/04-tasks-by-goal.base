@@ -1,0 +1,27 @@
+filters:
+  and:
+    - 'note.type == "task"'
+views:
+  - type: table
+    name: By goal
+    groupBy:
+      property: note.goal
+      direction: ASC
+    order:
+      - file.name
+      - note.priority
+      - note.status
+      - note.due
+      - note.blocked_by
+    sort:
+      - property: note.priority
+        direction: ASC
+  - type: table
+    name: Blocked
+    filters:
+      and:
+        - 'note.status == "blocked"'
+    order:
+      - file.name
+      - note.goal
+      - note.blocked_by

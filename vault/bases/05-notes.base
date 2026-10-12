@@ -1,0 +1,14 @@
+filters:
+  and:
+    - note.type == "note"
+views:
+  - type: table
+    name: All notes
+    groupBy:
+      property: kind
+      direction: ASC
+    order:
+      - file.name
+      - goal
+      - status
+      - implication

@@ -1,0 +1,12 @@
+filters:
+  and:
+    - 'note.type == "task"'
+    # If this line errors in your Obsidian version, use:  - 'note.goal == ""'
+    - 'note.goal.isEmpty()'
+views:
+  - type: table
+    name: Tasks with no goal (should be empty)
+    order:
+      - file.name
+      - note.priority
+      - note.source

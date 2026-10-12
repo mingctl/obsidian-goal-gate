@@ -1,0 +1,16 @@
+filters:
+  and:
+    - note.type == "goal"
+views:
+  - type: table
+    name: Goals
+    order:
+      - file.name
+      - id
+      - phase
+      - question
+      - revenue_gate
+      - status
+    sort:
+      - property: id
+        direction: ASC
